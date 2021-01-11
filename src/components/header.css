@@ -1,0 +1,121 @@
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 0 50px;
+}
+.nav, .menu-list, .dropdown{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.dropdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sub-menu-item{
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.nav{
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.nav a {
+    text-decoration: none;
+    color:#095a9e;
+    /*color: #77b844;*/
+}
+.menu-list{
+    margin:0;
+}
+.menu-item{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-size: 18px;
+}
+.menu-item:hover .dropdown-wrapper{
+    opacity: 1;
+    visibility: visible;
+}
+
+.brand {
+    width: 70px;
+}
+
+
+/*DROPDOWN*/
+
+.dropdown-wrapper{
+    width: 600px;
+    color: #fff;
+    padding: 30px 30px 0;
+    position: absolute;
+    top: calc(100% + 57px);
+    left: 0;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,.06);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #071735;
+    transform: translateY(-50px);
+    z-index: 998;
+    transition: all .3s ease-in-out;
+}
+.dropdown-wrapper:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 90px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #071735;
+}
+.dropdown{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dropdown-heading{
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.dropdown-link{
+    padding-right: 25px;
+}
+.dropdown-link:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    width: 8px;
+    height: 8px;
+    transform: translateY(-50%) rotate(45deg);
+    border-bottom: 2px solid #095a9e;
+    border-right: 2px solid #095a9e;
+}
+.contact-btn-wrapper{
+
+}
+.contact-btn{
+    padding: 0 20px;
+    min-width: 156px;
+    height: 48px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+}
