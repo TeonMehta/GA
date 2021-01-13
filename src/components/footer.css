@@ -1,6 +1,7 @@
 
 footer{
     width: 100%;
+    position: absolute;
 }
 .footer-container{
     width: 1110px;
@@ -16,6 +17,7 @@ footer{
 .footer-container{
     display: block;
     max-width: 100%!important;
+
 }
 .footer-grid{
     display: flex;
@@ -24,6 +26,7 @@ footer{
     align-items: stretch;
     padding: 0;
     margin: -1rem;
+    padding: 1rem 0;
 }
 .column{
     position: relative;

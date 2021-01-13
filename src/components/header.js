@@ -7,7 +7,7 @@ import Image from "./image"
 
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <nav>
     <div className="nav">
       <div className="brand"><Link to='/'><Image /> </Link></div>
       <div className="menu-wrapper">
@@ -46,7 +46,7 @@ const Header = ({ siteTitle }) => (
         <Link to='/contact' className='contact-btn'>Contact Us <span>&#8594;</span></Link>
       </div>
     </div>
-  </header>
+  </nav>
 )
 
 Header.propTypes = {

@@ -1,0 +1,56 @@
+.ui .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 0;
+    margin: -1rem;
+}
+
+.container{
+    width: 1110px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.hero-column{
+    width:50%;
+    position: relative;
+    display: inline-block;
+    padding: 1rem;
+    vertical-align: top;
+}
+
+.hero-image{
+    background: #071735;
+}
+
+
+.btn{
+    display: inline-block;
+    min-width: 250px;
+    height: 64px;
+    line-height: unset;
+    font-weight: 400;
+    background: #fff;
+    text-align: left;
+    padding: 30px 50px 0 8px;
+    position: relative;
+    color: #095a9e;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+}
+.hero-primary-btn{
+    border-color: #095a9e;
+    background-color: #095a9e;
+    color: #fff;
+    margin-right: 10px;
+}
+.hero-secondary-btn{
+    border-color: #dadada;
+    background-color: transparent;
+}
+.btn {
+    margin-bottom: 30px;
+}
