@@ -14,6 +14,9 @@
     display: inline-block;
     margin-bottom: 30px;
 }
+.nav-wrapper{
+    padding: 0 20px;
+}
 
 .nav{
     align-items: center;
@@ -23,7 +26,6 @@
 .nav a {
     text-decoration: none;
     color:#095a9e;
-    /*color: #77b844;*/
 }
 .menu-list{
     margin:0;
